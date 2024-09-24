@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     padding: 2% 6% .6% 0%;
-    background-color: #9795eb;
+    background-color: #8180b6;
     
 }
 
@@ -21,7 +21,7 @@
     border-radius: 10px;
     width: 25%;
     padding-right: 30px;
-    background-color: #9695eb54;
+    background-color: #8180b694;
 }
 
 #img{
@@ -34,10 +34,11 @@
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    width: 60%;
-    background-color: #9695eb54;
+    width: 50%;
+    background-color: #8180b694;
 }
 
-
-
+P{
+font-style: ;
+}
 
