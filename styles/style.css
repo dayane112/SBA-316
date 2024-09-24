@@ -1,0 +1,41 @@
+.navBar {
+    border: .1px none;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 6% .6% 0%;
+    background-color: rgb(151, 149, 235);
+    
+}
+
+.navText {   
+    color: #ffffffea;
+    text-decoration: none;
+}
+
+#underNav{
+    display: flex;
+}
+
+#search{
+    border-radius: 10px;
+    width: 25%;
+    padding-right: 30px;
+}
+
+#img{
+    border: .1px none;
+    width: 2px;
+    height: 4px;
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 60%;
+}
+
+
+
+
