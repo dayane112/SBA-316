@@ -42,3 +42,10 @@ P{
 font-style: ;
 }
 
+
+.blur {
+    filter: blur(20px);
+ 
+}
+
+

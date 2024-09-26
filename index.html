@@ -8,6 +8,8 @@
     <script defer src="./scripts/script.js"></script>
 </head>
 <body>
+    <!-- <div class="blurWindow"></div> -->
+
     <!-- ____________________navBar_____________________ -->
     <nav class="navBar">
         <a href="" class="navText">Forum</a>
@@ -26,19 +28,24 @@
         </label>
     </fieldset>
 
+    
+
     <Fieldset id="login">
-        <form id="topForm" action="">
+        <form id="topForm">
             <label id="mLogin"> Member login</label><br>
             <label> <input id="username" type="text" placeholder=" Username" minlength="6"  title="One word with no numbers or special characters." required></label>
             
             <label > <input type="password" placeholder=" Password" minlength="6" maxlength="16" required></label> 
 
-            <input type="submit"><br>
+            <input id="firstBtn" class="allBtn" type="submit"><br>
             <div id="rMe">
             <label > Remember me?<input type="checkbox" ></label></div>
         </form>
     </Fieldset>
     </div>
+
+    <h1>Welcome to the site!</h1>
+    <h1 id="welcome"></h1>
 
     <!-- ___________________image________________ -->
     <img src="" alt="">
@@ -47,7 +54,18 @@
     <!-- __________________blog___________________ -->
     <div>
         <h2>Important Updates</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</p>
+        <p>
+            <ul >
+                <li class="bullet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! </li> <br>
+                
+                <li class="bullet">
+                Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! </li> <br>
+                
+                <li class="bullet">
+                Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</li>
+            </ul>
+        </p>
+        <!-- <button>more</button> -->
     </div>
 
     <div></div>
@@ -59,7 +77,7 @@
         <label><h2>Comments</h2></label><br>
         <div class="commentSection">
             <textarea id="comment" rows="15" cols="50" style="height: 150px; width: 500px;"></textarea><br>
-        <button id="commentBtn">Submit</button>
+        <button class="allBtn" id="commentBtn">Submit</button>
         </div>
         <div id="allComment">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id, in dolore dignissimos sequi veritatis, deserunt ipsa voluptates possimus alias quis cum dolor eligendi ipsum dicta ad minima quam? Iure!</p>
