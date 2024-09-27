@@ -1,9 +1,9 @@
 // Window prompt for age request
 let age;
-for(i = 0; i < 2; i++){
+for(let i = 0; i < 3; i++){
     
     age = window.prompt('You must be 18+ years or older to enter this site. Do you wish to continue?')
-    age= age.toLowerCase();
+    age = age.toLowerCase();
 
     if(age === 'yes'){
         alert('Please enjoy the site!');
@@ -14,7 +14,10 @@ for(i = 0; i < 2; i++){
         break;
     }else{
         alert('Please input yes or no. You will be redirected if you do not answer');
-        window.location.href = 'https://www.google.com/'
+        if(i === 3){
+            window.location.href = 'https://www.google.com/';
+            break;
+        }
     }
 }
 
@@ -23,9 +26,16 @@ for(i = 0; i < 2; i++){
 let search = document.getElementById('search');
 search.style.textAlign = 'right';
 
+let sBtn = document.getElementsByClassName('sBtn')
+for(let i = 0; i < sBtn.length; i++){
+    sBtn[i].addEventListener('click', function(e) {
+        e.preventDefault();
 
-// editing the member login__________________________
-
+        sBtn[i].style.color = 'white';
+        sBtn[i].style.backgroundColor = '#8180b6';
+        // sBtn[i] = '' 
+    })
+}
 
 
 
@@ -50,8 +60,65 @@ firstBtn.addEventListener('click', function(e) {
     welcome.textContent = `Thank you for logging in, ${username}`
 
     firstBtn.style.color = 'white';
-    firstBtn.style.backgroundColor = 'purple';
+    firstBtn.style.backgroundColor = '#8180b6';
 })
+
+
+// editing the member login__________________________
+let fBtn = document.getElementById('firstBtn');
+let userN = document.getElementById('username');
+let password = document.getElementById('password')
+
+function memberSubmit() {
+    let passwords = password.value.length >= 16;
+    let userName = userN.value.length >= 6;
+    if(passwords && userName){
+        fBtn.disabled = false
+    }else{
+        fBtn.disabled = true
+    }
+}
+userN.addEventListener('input', memberSubmit)
+password.addEventListener('input', memberSubmit)
+memberSubmit()
+
+// let uName = userN.addEventListener('input');
+// let pswd = password.addEventListener('input');
+// memberSubmit(uName, pswd);
+
+// userN.addEventListener('input', function () {
+
+//     let userName = userN.value
+//     if(userName < 6){
+//         fBtn.disabled = true;
+//     }else{
+//         fBtn.disabled = false;
+//     }
+// })
+
+
+// password.addEventListener('input', function () {
+
+//     let passwords = password.value
+//     if(passwords < 16){
+//         password.disabled = true;
+//     }else{
+//         password.disabled = false;
+//     }
+// })
+
+
+// code below not working
+// userN.addEventListener('input', function () {
+
+//     let userName = userN.value
+//     if(userName !== ''){
+//         fBtn.disabled = true;
+//     }else{
+//         fBtn.disabled = false;
+//     }
+// })
+
 
 
 // styling all h1 elements____________________________________
@@ -59,7 +126,7 @@ let headingOne = document.querySelectorAll('h1');
 headingOne.forEach(h1Heading => {
     h1Heading.style.textAlign = 'center'
     h1Heading.style.color = '#8180b6';
-    h1Heading.style.padding = '0px'
+    h1Heading.style.padding = '0px';
 })
 
 
@@ -72,6 +139,7 @@ headingTwo.forEach(heading => {
     heading.style.padding = '8px 0px 8px 25px';
     heading.style.borderRadius = '10px';
     heading.style.margin = '50px 0px 2px 0px';
+    heading.style.fontStyle = 'Oblique'
 });
 
 
@@ -80,6 +148,13 @@ let para = document.querySelectorAll('p');
 
 for (let i = 0; i < para.length; i++) {
     para[i].style.padding = '0px 0px 0px 35px';
+}
+
+// changing second h4 to a lighter color
+let paraOne= document.querySelector('h2 + h4 + p');
+let paraTwo = paraOne.nextElementSibling;
+if(paraTwo){
+    paraTwo.style.color = '#8180b694'
 }
 
 
@@ -109,6 +184,7 @@ allComment.style.fontStyle = 'oblique';
 allComment.style.color = '#8180b6';
 
 
+
   commentBtn.addEventListener('click', function(e) {
     e.preventDefault();
     let comment = comments.value.trim();
@@ -121,10 +197,12 @@ allComment.style.color = '#8180b6';
 
     // assigns the new comemnt value to the new p element 
     para.textContent = comment; 
+    para.style.padding = '0px 0px 0px 35px';
 
     // adding new comment after the last child element
     allComment.appendChild(para);
-  
+
+
     comments.value = "";
     comments.focus();
   })

@@ -48,4 +48,18 @@ font-style: ;
  
 }
 
+#subS{
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    background-color: #8180b694;
+}
 
+#bottomBar{
+    background-color: #8180b6;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}

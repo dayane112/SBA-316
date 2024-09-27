@@ -23,9 +23,10 @@
     <!-- _____________quick search and member login____________________ -->
     <div id="underNav">
     <fieldset id="search">
-        <label> Quick search
+        <label> Quick search <br>
             <input type="search" name="" id="" placeholder="Quick Search" > 
-        </label>
+        </label><br>
+        <input class="sBtn" class="allBtn" type="submit">
     </fieldset>
 
     
@@ -35,7 +36,7 @@
             <label id="mLogin"> Member login</label><br>
             <label> <input id="username" type="text" placeholder=" Username" minlength="6"  title="One word with no numbers or special characters." required></label>
             
-            <label > <input type="password" placeholder=" Password" minlength="6" maxlength="16" required></label> 
+            <label > <input id="password" type="password" placeholder=" Password" minlength="6" maxlength="16" required></label> 
 
             <input id="firstBtn" class="allBtn" type="submit"><br>
             <div id="rMe">
@@ -44,6 +45,7 @@
     </Fieldset>
     </div>
 
+    <!-- ________________Welcome section______________ -->
     <h1>Welcome to the site!</h1>
     <h1 id="welcome"></h1>
 
@@ -70,6 +72,9 @@
 
     <div></div>
         <h2>Latest Blog Post</h2>
+        <h4>Lorem, ipsum dolor.</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</p>
+        <h4>Lorem, ipsum dolor.</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</p>
     </div>
 
@@ -77,13 +82,32 @@
         <label><h2>Comments</h2></label><br>
         <div class="commentSection">
             <textarea id="comment" rows="15" cols="50" style="height: 150px; width: 500px;"></textarea><br>
-        <button class="allBtn" id="commentBtn">Submit</button>
+        <button class="sBtn" id="commentBtn">Submit</button>
         </div>
         <div id="allComment">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id, in dolore dignissimos sequi veritatis, deserunt ipsa voluptates possimus alias quis cum dolor eligendi ipsum dicta ad minima quam? Iure!</p>
         </div>
     </div>
 
+    <!-- ________________Subscribe__________________ -->
+    <fieldset id="subS">
+        <label>Subscribe at <br>
+            <input type="email">
+            <input class="sBtn" type="submit" >
+        </label>
+    </fieldset>
+
+    <!-- ___________________Contact_______________________ -->
+    <div id="bottomBar">
+    
+        <h5>Contact us<br>
+            Call us at (212)867-5309 <br>
+            Monday - Friday <br>
+            8 AM to 5 PM Est <br>
+            Or email us at email@email.com <br>
+        </h5>
+
+    </div>
 
 
 
