@@ -32,7 +32,7 @@ for(let i = 0; i < sBtn.length; i++){
         e.preventDefault();
 
         sBtn[i].style.color = 'white';
-        sBtn[i].style.backgroundColor = '#8180b6';
+        sBtn[i].style.backgroundColor = '#80b693';
         // sBtn[i] = '' 
     })
 }
@@ -60,7 +60,7 @@ firstBtn.addEventListener('click', function(e) {
     welcome.textContent = `Thank you for logging in, ${username}`
 
     firstBtn.style.color = 'white';
-    firstBtn.style.backgroundColor = '#8180b6';
+    firstBtn.style.backgroundColor = '#80b693';
 })
 
 
@@ -125,7 +125,7 @@ memberSubmit()
 let headingOne = document.querySelectorAll('h1');
 headingOne.forEach(h1Heading => {
     h1Heading.style.textAlign = 'center'
-    h1Heading.style.color = '#8180b6';
+    h1Heading.style.color = '#80b693';
     h1Heading.style.padding = '0px';
 })
 
@@ -134,7 +134,7 @@ headingOne.forEach(h1Heading => {
 let headingTwo = document.querySelectorAll('h2');
 
 headingTwo.forEach(heading => {
-    heading.style.backgroundColor = '#6f6dac';
+    heading.style.backgroundColor = '#80b693';
     heading.style.color = 'white';
     heading.style.padding = '8px 0px 8px 25px';
     heading.style.borderRadius = '10px';
@@ -151,10 +151,10 @@ for (let i = 0; i < para.length; i++) {
 }
 
 // changing second h4 to a lighter color
-let paraOne= document.querySelector('h2 + h4 + p');
+let paraOne= document.querySelector('h2 + h4 + div');
 let paraTwo = paraOne.nextElementSibling;
 if(paraTwo){
-    paraTwo.style.color = '#8180b694'
+    paraTwo.style.color = '#80b693'
 }
 
 
@@ -181,7 +181,7 @@ let commentBtn = document.getElementById('commentBtn');
 // comment list
 let allComment = document.getElementById('allComment');
 allComment.style.fontStyle = 'oblique';
-allComment.style.color = '#8180b6';
+allComment.style.color = '#80b693';
 
 
 

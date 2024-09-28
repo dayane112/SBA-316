@@ -6,9 +6,21 @@
     <title>SBA 316</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script defer src="./scripts/script.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!-- <div class="blurWindow"></div> -->
+
+    <!-- ___________________image________________ -->
+    <img id="topImg" src="./images/cats.jpg" width="100%"  alt="kittens in grass">
+    <img id="topImg2" src="./images/cute cats.JPG" alt="" width="98%">
+
 
     <!-- ____________________navBar_____________________ -->
     <nav class="navBar">
@@ -49,23 +61,24 @@
     <h1>Welcome to the site!</h1>
     <h1 id="welcome"></h1>
 
-    <!-- ___________________image________________ -->
-    <img src="" alt="">
 
 
     <!-- __________________blog___________________ -->
     <div>
         <h2>Important Updates</h2>
         <p>
-            <ul >
-                <li class="bullet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! </li> <br>
-                
-                <li class="bullet">
-                Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! </li> <br>
-                
-                <li class="bullet">
-                Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</li>
-            </ul>
+            <div class="content">
+                <ul >
+                    <li class="bullet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! </li> <br>
+                    
+                    <li class="bullet">
+                    Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! </li> <br>
+                    
+                    <li class="bullet">
+                    Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</li>
+                </ul>
+                <img src="./images/cat on back.jpg" alt="" width="250px" id="catBack">
+            </div>
         </p>
         <!-- <button>more</button> -->
     </div>
@@ -73,9 +86,15 @@
     <div></div>
         <h2>Latest Blog Post</h2>
         <h4>Lorem, ipsum dolor.</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</p>
+        <div class="content">
+            <p id="parSide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</p>
+            <img id="blogCat" src="./images/cats with light.jpg" alt="cat with light">
+        </div>
         <h4>Lorem, ipsum dolor.</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</p>
+        <div class="content">
+            <img id="blackCat" src="./images/black cat.jpg" alt="">
+            <p id="parSide2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nisi, vitae, perspiciatis nam non officiis culpa aspernatur autem sunt cumque repudiandae! Debitis assumenda consequuntur odit officia mollitia laudantium explicabo hic beatae ratione quis? Quo veniam iste eum quisquam ipsa! Tenetur doloremque laboriosam eos enim maxime soluta vitae asperiores saepe porro, magni quod at! Dolorem molestias fugiat nulla pariatur assumenda aspernatur?</p>
+        </div>
     </div>
 
     <div>
@@ -100,13 +119,13 @@
     <!-- ___________________Contact_______________________ -->
     <div id="bottomBar">
     
-        <h5>Contact us<br>
+        <h5 id="bottomText" style='font-family: Raleway;' >Contact us<br>
             Call us at (212)867-5309 <br>
             Monday - Friday <br>
             8 AM to 5 PM Est <br>
             Or email us at email@email.com <br>
         </h5>
-
+        <img id="bottomImg" src="./images/kitten eyes.jpg" alt="Siamese cat" width="100%" height="170px">
     </div>
 
 
